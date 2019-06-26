@@ -9,18 +9,18 @@
 import UIKit
 
 class Movie {
-    private var title : String?
-    private var rating : Double?
-    private var overview : String?
-    private var releaseDate : String?
+    var title : String?
+    var rating : Double?
+    var overview : String?
+    var releaseDate : String?
     
-    private var posterImageUrlLow : URL?
-    private var posterImageUrlMedium : URL?
-    private var posterImageUrlHigh : URL?
+    var posterImageUrlLow : URL?
+    var posterImageUrlMedium : URL?
+    var posterImageUrlHigh : URL?
     
-    private var backdropImageUrlLow : URL?
-    private var backdropImageUrlMedium : URL?
-    private var backdropImageUrlHigh : URL?
+    var backdropImageUrlLow : URL?
+    var backdropImageUrlMedium : URL?
+    var backdropImageUrlHigh : URL?
     
     
     init(dictionary : [String : Any?]) {

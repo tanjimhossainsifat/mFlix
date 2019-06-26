@@ -10,7 +10,7 @@ import UIKit
 
 class Constant {
     
-    private static let baseUrl: String = "https://api.themoviedb.org/3/movie/"
+    private static let baseUrl: String = "https://api.themoviedb.org/3/movie/now_playing"
     private static let imageBaseUrl: String = "https://image.tmdb.org/t/p/"
     private static let apiKey: String = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
     

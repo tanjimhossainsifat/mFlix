@@ -7,24 +7,51 @@
 //
 
 import UIKit
+import MBProgressHUD
 
-class NowPlayingViewController: UIViewController {
+class NowPlayingViewController: UIViewController{
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    
+    let movieTableDataSource = MovieTableDataSource()
+    let movieApi = MovieDBApi()
+    
+    var filteredMovies = [Movie]() {
+        didSet {
+            movieTableDataSource.movies = filteredMovies
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = movieTableDataSource
+        tableView.delegate = self
+        fetchDataByApi()
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+extension NowPlayingViewController : MovieDBDelegate {
+    func didFinishUpdatingMovies(movies: [Movie]) {
+        MBProgressHUD.hide(for: self.view, animated: true)
+        self.filteredMovies = movies
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func didFailWithError(error: Error) {
+        
     }
-    */
+    
+}
 
+extension NowPlayingViewController {
+    func fetchDataByApi() {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        movieApi.delegate = self
+        movieApi.fetchMovies()
+    }
+}
+
+extension NowPlayingViewController : UITableViewDelegate {
+    
 }
