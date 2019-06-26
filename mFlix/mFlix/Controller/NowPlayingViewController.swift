@@ -17,6 +17,7 @@ class NowPlayingViewController: UIViewController{
     
     let movieTableDataSource = MovieTableDataSource()
     let movieApi = MovieDBApi()
+    let databaseHelper = DatabaseHelper()
     
     var movies = [Movie]() {
         didSet {
@@ -67,7 +68,10 @@ extension NowPlayingViewController {
 }
 
 extension NowPlayingViewController : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = movies[indexPath.row]
+        databaseHelper.save(movie: movie)
+    }
 }
 
 extension NowPlayingViewController: UISearchBarDelegate {

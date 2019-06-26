@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+
 
 enum MovieDBErrors: Error {
     case networkFail(description: String)

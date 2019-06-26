@@ -22,6 +22,7 @@
 		62EA64FD22C3CA0C005A9BD2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA64FC22C3CA0C005A9BD2 /* Constant.swift */; };
 		62EA64FF22C3D21E005A9BD2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA64FE22C3D21E005A9BD2 /* MovieTableViewCell.swift */; };
 		62EA650422C3D962005A9BD2 /* MovieTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA650322C3D962005A9BD2 /* MovieTableDataSource.swift */; };
+		62EA650722C4008D005A9BD2 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA650622C4008D005A9BD2 /* DatabaseHelper.swift */; };
 		DB660A7DE618399D577E2343 /* Pods_mFlixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549FB450A2C8DA09267337D0 /* Pods_mFlixUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		62EA64FC22C3CA0C005A9BD2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		62EA64FE22C3D21E005A9BD2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		62EA650322C3D962005A9BD2 /* MovieTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableDataSource.swift; sourceTree = "<group>"; };
+		62EA650622C4008D005A9BD2 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		6EE81532D67C111EE57959BF /* Pods_mFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D09D62F77B27EB15E2BA1 /* Pods-mFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mFlix.release.xcconfig"; path = "Pods/Target Support Files/Pods-mFlix/Pods-mFlix.release.xcconfig"; sourceTree = "<group>"; };
 		ADB2653D65C1CDE9541FF8F9 /* Pods-mFlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mFlixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mFlixUITests/Pods-mFlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		62EA64F222C3BA9D005A9BD2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				62EA650522C40071005A9BD2 /* Helper */,
 				62EA64F322C3BAA1005A9BD2 /* API */,
 			);
 			path = Service;
@@ -224,6 +227,14 @@
 				62EA650322C3D962005A9BD2 /* MovieTableDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62EA650522C40071005A9BD2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				62EA650622C4008D005A9BD2 /* DatabaseHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		7ED9C1DD9FB000F54C357EDB /* Pods */ = {
@@ -452,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EA650422C3D962005A9BD2 /* MovieTableDataSource.swift in Sources */,
+				62EA650722C4008D005A9BD2 /* DatabaseHelper.swift in Sources */,
 				62EA64C722C3B7BF005A9BD2 /* mFlix.xcdatamodeld in Sources */,
 				62EA64FB22C3C175005A9BD2 /* MovieDBApi.swift in Sources */,
 				62EA64FF22C3D21E005A9BD2 /* MovieTableViewCell.swift in Sources */,

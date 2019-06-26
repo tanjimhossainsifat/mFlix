@@ -22,6 +22,12 @@ class Movie {
     var backdropImageUrlMedium : URL?
     var backdropImageUrlHigh : URL?
     
+    init(title : String?, rating : Double? , overview : String?, releaseDate : String?) {
+        self.title = title
+        self.rating = rating
+        self.overview = overview
+        self.releaseDate = releaseDate
+    }
     
     init(dictionary : [String : Any?]) {
         title = dictionary["title"] as? String
