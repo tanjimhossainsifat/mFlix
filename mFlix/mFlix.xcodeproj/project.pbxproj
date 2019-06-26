@@ -20,6 +20,7 @@
 		62EA64F922C3BF5B005A9BD2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA64F822C3BF5B005A9BD2 /* Movie.swift */; };
 		62EA64FB22C3C175005A9BD2 /* MovieDBApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA64FA22C3C175005A9BD2 /* MovieDBApi.swift */; };
 		62EA64FD22C3CA0C005A9BD2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA64FC22C3CA0C005A9BD2 /* Constant.swift */; };
+		62EA64FF22C3D21E005A9BD2 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA64FE22C3D21E005A9BD2 /* MovieTableViewCell.swift */; };
 		DB660A7DE618399D577E2343 /* Pods_mFlixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549FB450A2C8DA09267337D0 /* Pods_mFlixUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		62EA64F822C3BF5B005A9BD2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		62EA64FA22C3C175005A9BD2 /* MovieDBApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBApi.swift; sourceTree = "<group>"; };
 		62EA64FC22C3CA0C005A9BD2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		62EA64FE22C3D21E005A9BD2 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		6EE81532D67C111EE57959BF /* Pods_mFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D09D62F77B27EB15E2BA1 /* Pods-mFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mFlix.release.xcconfig"; path = "Pods/Target Support Files/Pods-mFlix/Pods-mFlix.release.xcconfig"; sourceTree = "<group>"; };
 		ADB2653D65C1CDE9541FF8F9 /* Pods-mFlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mFlixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mFlixUITests/Pods-mFlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				62EA64C222C3B7BF005A9BD2 /* Main.storyboard */,
 				62EA64CA22C3B7C1005A9BD2 /* LaunchScreen.storyboard */,
+				62EA64FE22C3D21E005A9BD2 /* MovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			files = (
 				62EA64C722C3B7BF005A9BD2 /* mFlix.xcdatamodeld in Sources */,
 				62EA64FB22C3C175005A9BD2 /* MovieDBApi.swift in Sources */,
+				62EA64FF22C3D21E005A9BD2 /* MovieTableViewCell.swift in Sources */,
 				62EA64F722C3BB5D005A9BD2 /* NowPlayingViewController.swift in Sources */,
 				62EA64F922C3BF5B005A9BD2 /* Movie.swift in Sources */,
 				62EA64BF22C3B7BF005A9BD2 /* AppDelegate.swift in Sources */,
