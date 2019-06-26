@@ -30,22 +30,22 @@ class Movie {
         releaseDate = dictionary["release_date"] as? String
         
         if let posterImagePath = dictionary["poster_path"] as? String {
-            posterImageUrlMedium = URL(string: MovieDBApi.getImageBaseUrl() + "w500" + posterImagePath)
-            posterImageUrlHigh = URL(string: MovieDBApi.getImageBaseUrl() + "original" + posterImagePath)
-            posterImageUrlLow = URL(string: MovieDBApi.getImageBaseUrl() + "w45" + posterImagePath)
+            posterImageUrlMedium = URL(string: Constant.getImageBaseUrl() + "w500" + posterImagePath)
+            posterImageUrlHigh = URL(string: Constant.getImageBaseUrl() + "original" + posterImagePath)
+            posterImageUrlLow = URL(string: Constant.getImageBaseUrl() + "w45" + posterImagePath)
         }
         
         if let backdropPath = dictionary["backdrop_path"] as? String {
-            backdropImageUrlMedium = URL(string: MovieDBApi.getImageBaseUrl() + "w500" + backdropPath)
-            backdropImageUrlHigh = URL(string: MovieDBApi.getImageBaseUrl() + "original" + backdropPath)
-            backdropImageUrlLow = URL(string: MovieDBApi.getImageBaseUrl() + "w45" + backdropPath)
+            backdropImageUrlMedium = URL(string: Constant.getImageBaseUrl() + "w500" + backdropPath)
+            backdropImageUrlHigh = URL(string: Constant.getImageBaseUrl() + "original" + backdropPath)
+            backdropImageUrlLow = URL(string: Constant.getImageBaseUrl() + "w45" + backdropPath)
         }
         
     }
 }
 
 extension Movie {
-    func movies(movieList : [[String : Any?]]) -> [Movie] {
+    class func movies(movieList : [[String : Any?]]) -> [Movie] {
         return movieList.map{Movie(dictionary: $0)}
     }
 }
